@@ -13,7 +13,7 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     p{
-        text-align: center;
+        text-align: left;
         color: dimgrey;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
@@ -27,24 +27,36 @@
 </head>
 <body style="background-color:rgb(228, 248, 174);">
     <p>
-        <table style="border-spacing: 5;">
+        <table style="border-spacing: 10;">
             <tr>
                 <td><a href="memes.html" style="text-decoration: none;"><img src="kot_news.gif" width="120"></a></td>
                 <td><a href="breed.html" style="text-decoration: none;">Породы кошек</a></td>
                 <td><a href="shelters.html" style="text-decoration: none;">Приюты и ветклиники</a></td>
+                <td><a href="main.html" style="text-decoration: none;">Оставить комментарий</a></td>
             </tr>
         </table>
     </p> 
-<p>
-    <img src = "mem1.gif">
-    <img src = "mem2.gif">
-    <img src = "mem3.gif">
-    <img src = "mem4.gif">
-    <img src = "mem5.gif">
-    <img src = "mem6.gif">
-    <img src = "mem7.gif">
-    <img src = "mem9.gif">
-</p>
-    
+    <p style="text-align: left;">Введите имя *</p>
+    <form>
+        <input type=text id = "name" name="name" value="Имя" size=40> <span id="statusName"></span>
+        <p>Введите e-mail *</p>
+        <input type=text id="email" name = "email" value="lovecat@love.ru" size=40> <span id="status"></span>
+    </form>
+       <form action=”URL-адрес сервера” method=post
+enctype=multipart/form-data >
+<p style="text-align: left;">Вам нравится сайт?</p>
+<p><input type=radio name="r1" value=1 checked>Да</p>
+<p><input type=radio name="r1" value=2>Нет</p>
+<p><input type=radio name="r1" value=3>Не знаю</p>
+</form> 
+    <p style="text-align: left;">Введите комментарий</p>
+    <form>
+        <textarea name="comments" rows=25 cols=100>
+        Комментарий 1
+        </textarea>
+       </form>
+    <p>* - поле должно быть заполнено</p>
+  <script src="correct_email.js"></script>
+    <button onclick="showDialog()" type="submit" class="btn-submit">Оставить комментарий</button>
 </body>
 </html>
