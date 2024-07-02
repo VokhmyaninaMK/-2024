@@ -8,7 +8,6 @@ else
 }
 }
 
-
 function postEmail() {
     var str = document.getElementById("email").value;
     var nm = document.getElementById("name").value;

@@ -41,22 +41,17 @@
         <input type=text id = "name" name="name" value="Имя" size=40> <span id="statusName"></span>
         <p>Введите e-mail *</p>
         <input type=text id="email" name = "email" value="lovecat@love.ru" size=40> <span id="status"></span>
-    </form>
-       <form action=”URL-адрес сервера” method=post
-enctype=multipart/form-data >
-<p style="text-align: left;">Вам нравится сайт?</p>
-<p><input type=radio name="r1" value=1 checked>Да</p>
-<p><input type=radio name="r1" value=2>Нет</p>
-<p><input type=radio name="r1" value=3>Не знаю</p>
-</form> 
-    <p style="text-align: left;">Введите комментарий</p>
-    <form>
+        <p style="text-align: left;">Вам нравится сайт?</p>
+        <p><input type=radio name="r1" value=1 checked>Да</p>
+        <p><input type=radio name="r1" value=2>Нет</p>
+        <p><input type=radio name="r1" value=3>Не знаю</p>
+        <p style="text-align: left;">Введите комментарий</p>
         <textarea name="comments" rows=25 cols=100>
         Комментарий 1
         </textarea>
        </form>
     <p>* - поле должно быть заполнено</p>
-  <script src="correct_email.js"></script>
+    <script src="correct_email.js"></script>
     <button onclick="showDialog()" type="submit" class="btn-submit">Оставить комментарий</button>
 </body>
 </html>
